@@ -9,7 +9,7 @@ const fulldays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const date = new Date();
     let day = days[date.getDay()];
-    let month = (date.getMonth()+1 < 10) ? "0" + date.getMonth()+1 : date.getMonth()+1;
+    let month = (date.getMonth()+1 < 10) ? date.getMonth()+1 : date.getMonth()+1;
     let year = date.getFullYear();
     let dte = (date.getDate() < 10) ? "0" + date.getDate() : date.getDate();
 clock();
